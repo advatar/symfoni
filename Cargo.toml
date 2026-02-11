@@ -1,0 +1,6 @@
+[workspace]
+resolver = "2"
+members = [
+  "crates/symfoni_cli",
+  "crates/symfoni_mcp",
+]

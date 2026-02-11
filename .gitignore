@@ -1,0 +1,52 @@
+# Rust build artifacts
+/target/
+**/*.rs.bk
+
+# Swift / Xcode artifacts
+/.build/
+/DerivedData/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcuserdatad/
+*.xcuserstate
+
+# Coverage and profiling outputs
+*.profraw
+*.profdata
+*.gcda
+*.gcno
+*.gcov
+/coverage/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+/tmp/
+/temp/
+
+# Environment and local configuration
+.env
+.env.*
+!.env.example
+*.local
+
+# Editor settings
+.idea/
+*.iml
+.vscode/
+
+# macOS filesystem artifacts
+.DS_Store
+._*
+
+# Python local artifacts (tooling scripts)
+__pycache__/
+*.py[cod]
+.venv/
+
+# Node local artifacts (if frontend tooling is used)
+node_modules/
+
+# Local AI/tooling workspace artifacts
+.codex/

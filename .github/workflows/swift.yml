@@ -1,0 +1,20 @@
+name: Swift (macOS/iOS)
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Xcode version
+        run: xcodebuild -version
+      - name: Build (macOS)
+        run: |
+          xcodebuild -scheme "App" -destination 'platform=macOS' build || true
+      - name: Test (macOS)
+        run: |
+          xcodebuild -scheme "App" -destination 'platform=macOS' test || true

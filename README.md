@@ -1,4 +1,4 @@
-# AI Coordination Toolkit
+# Symfoni
 
 A **CLI-first toolkit** for coordinating humans and AI coding agents without losing velocity to merge conflicts, review overload, or intent drift.
 
@@ -20,7 +20,7 @@ AI makes writing code fast — but **coordination, verification, and integration
 
 It installs coordination primitives into a repository:
 
-- `ai-coord` CLI to bootstrap/configure repos
+- `symfoni` CLI to bootstrap/configure repos
 - GitHub Actions workflows (Swift + Rust preset)
 - PR + issue templates
 - local verification scripts
@@ -31,10 +31,10 @@ It does **not** replace GitHub, CI/CD, or human judgment.
 ## Quick start
 
 ```bash
-cargo install --path crates/ai_coord_cli
+cargo install --path crates/symfoni_cli
 
 cd /path/to/your/repo
-ai-coord init --preset swift-rust
+symfoni init --preset swift-rust
 ```
 
 ## Works with
